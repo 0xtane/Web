@@ -1,0 +1,168 @@
+body{
+	background-color: whitesmoke;
+	background-size: cover; 
+	background-repeat: repeat;
+  	background-attachment: scroll;
+  	background-position: top left; 
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.ToDo{
+	float: left;
+	margin: 23px auto 23px 23px;
+	font-size: 30px;
+	padding: 10px 15px 10px 15px;
+	background-color: white;
+	color: black;
+	border-radius: 510px;
+	font-weight: bold;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+header{
+	height: 100px;
+	background-color: rgb(25, 146, 155);
+}
+
+#navbar{
+	margin-top: 2.6%;
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	position: fixed;
+}
+
+.link{
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	padding: 15px;
+}
+
+.link:hover{
+	color: black;
+	background-color: white;
+	transition: 0.25s;
+	border-radius: 510px;
+}
+
+#logout{
+	position: absolute;
+	margin-top: 1.6%; 
+	margin-left: 85%;
+}
+
+.linput_box {
+	margin-top: 40px;
+	border: 2px solid rgb(25, 146, 155);
+	background: transparent;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 40px;
+}
+
+.linput {
+	padding-left: 15px;
+	color: white;
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	width: 400px;
+	font-size: 15px;
+	line-height: 40px;
+	transition: 0.3s;
+}
+
+.linput_btn {
+	float: right;
+	height: 40px;
+	width: 40px;
+	border: none; 
+	background: rgb(25, 146, 155);
+	cursor: pointer;
+	background-image: url("../img/b.png");
+	background-size: 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: 0.2s;
+}
+
+.linput_btn:hover{
+	background-color: white;
+	background-image: url("../img/b-black.png")
+}
+
+::placeholder{
+	color: black;
+}
+
+.linput_box input[type="text"]:focus{
+	width: 500px;
+	background-color: rgb(25, 146, 155);
+}
+
+.tasks{
+	width: 330px;
+	border: 2px solid rgb(25, 146, 155);
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 5px;
+	list-style: none;
+}
+
+.task{
+	padding: 3px;
+	background: none;
+	border: none;
+	font-size: 25px;
+	width:300px;
+	cursor: context-menu;
+	transition: 0.5s;
+}
+
+ul li:hover{
+	background-color: rgb(25, 146, 155);
+}
+
+li:nth-child(odd){
+	background-color:lightgray;
+}
+
+li:nth-child(even){
+	background-color: gray;
+}
+
+input[type="checkbox"]{
+	width: 15px;
+	height: 15px;
+}
+
+footer {
+    background-color: rgb(25, 146, 155);
+    bottom: 0;
+    color: black; 
+    font-size: 10px;
+    height: 25px;
+    line-height: 25px;
+    position: fixed;
+    text-align: right;
+    vertical-align: middle;
+    width: 100%;
+}
+
+footer p {
+	font-size: 10px;
+    margin: 0 10px 0 0;
+}

@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@import "main.css";
+
+@media screen {
+	body {
+							background: grey;
+							background: url("../img/back.jpg");
+							background-repeat:no-repeat;
+							background-attachment:scroll;
+							background-position:top-left;
+						 }
+
+}
+/* Change the print styles so that in the print version the header is not shown. Use the display property
+for this;
+ Set the color of the text to black;
+ Introduce further design changes according your own will */
+@media print {
+	body {
+		background: white;
+		color:black !important;
+		nav {display: none;}
+	}
+
+}
+
+body {
+	font-family:Helvetica;
+	color:lightblue !important;
+}
+
+
+
+header {
+	height: 150px;
+	background: rgba(200,200,250,0.5);
+}
+
+
+
+nav {
+
+	margin:0,auto,0,auto;
+	position: relative;
+	width:600px;
+	top:20px;
+
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  background-color:light red;
+
+}
+
+
+
+nav ul li{
+	float:left;
+	padding:2px;
+	margin-right:10px;
+	height:30px;
+	background-color:green;
+}
+
+
+.menu a {
+
+		text-decoration:none;
+
+}
+
+
+a:hover {
+
+	color:yellow;
+
+}
+li:hover {
+	background-color:red;
+
+}
+
+h1,h2 {
+	color:red;
+	text-shadow: 3px 3px black;
+}
+
+h1 {
+	font-size:150%;
+	text-transform:uppercase;
+}
+h2 {
+	font-size:120%;
+}
+article {
+	padding:20px;
+}
+
+
+#flight-statuses {
+	border-collapse: collapse;
+	width:600px;
+  text-align:center;
+	margin-left:auto;
+  margin-right:auto;
+	border:1px solid black;
+}
+
+/* The row height for all tables in the HTML document is 40px;
+ Odd rows have white background;
+ Even rows have light grey background;
+ The text color and background are flipped for the heading cells <th>.
+ Cells have padding from left and right set to 10px. */
+
+table tr {
+	height:40px;
+	color:black;
+}
+
+tr:nth-child(odd) {
+	background:white;
+
+}
+
+tr:nth-child(even) {
+	background:lightgray;
+}
+
+th {
+	background:black;
+	color:white;
+}
+td {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/* Write the following style rules effective only for the flight status table by its id (you need to use table id):
+ When hovering over the rows, the background color is changed (highlighted) and a line is shown on
+top and under the row
+
+Write the following general page-wise styles for the style classes named:
+ cancelled – text color red and text in bold
+ departed – text color green and a symbol of a plane (use code '\2708') after the text */
+
+#flight-statuses tr:hover {
+	background:yellow;
+	border-top: 1px solid black;
+	border-bottom:1px solid black;
+}
+
+.cancelled {
+	color:red;
+	font-weight: bold;
+}
+.departed {
+	color:green;
+
+
+}
+.departed::after {
+	color:green;
+	content:"\2708";
+
+}
